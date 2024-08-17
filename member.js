@@ -20,7 +20,7 @@ let membership=[
 ["61", "Ysobel", "Jones", "ysobeljones@gmail.com", "007764 605727"],
 ["42", "Anna", "Keeling", "ajkeeling52@gmail.com", "01446 793610"],
 ["93", "Julia", "Lee-Jones", "j_leejones@hotmail.com", " "],
-["46", "Andrew", "Leonard", "andrew.leonard3697@gmail.com", "01446 793697"],
+["46", "Andrew", "Leonard", " ", " "],
 ["45", "Caroline", "Leonard", "carolineleonard3697@gmail.com", "01446 793697"],
     
 ["49", "Alison", "Littlejohn", "alimarlit@gmail.com", "01446 796322"],
@@ -64,5 +64,3 @@ function togglePopup(){
     document.getElementById("popup-1") .classList.toggle("active");
 
 }
-
-
