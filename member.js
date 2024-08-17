@@ -38,6 +38,15 @@ let membership=[
 ["79", "Dorothy", "Williams", "dotandesgadlys@talktalk.net", "07912640212"]
 ]
 
+for (let x=1; x<=(membership.length); x++){ 
+
+    let z="btn".concat(x);
+    const y=document.getElementById(z);
+    y.addEventListener("click",function(e){   
+        myCalc(y.innerText);
+        togglePopup();
+        })};
+
 function myCalc(lbl){
     for (let i=0; i<=(membership.length-1); i++){      
     if (lbl==membership[i][1].concat(" ",membership[i][2])){
@@ -56,164 +65,4 @@ function togglePopup(){
 
 }
 
-const btn1=document.getElementById("btn1");
-btn1.addEventListener("click",function(e){   
-myCalc(btn1.innerText);
-togglePopup();
-});
-const btn2=document.getElementById("btn2");
-btn2.addEventListener("click",function(e){   
-myCalc(btn2.innerText);
-togglePopup();
-});
-const btn3=document.getElementById("btn3");
-btn3.addEventListener("click",function(e){   
-myCalc(btn3.innerText);
-togglePopup();
-});
-const btn4=document.getElementById("btn4");
-btn4.addEventListener("click",function(e){   
-myCalc(btn4.innerText);
-togglePopup();
-});
-const btn5=document.getElementById("btn5");
-btn5.addEventListener("click",function(e){   
-myCalc(btn5.innerText);
-togglePopup();
-});
-const btn6=document.getElementById("btn6");
-btn6.addEventListener("click",function(e){   
-myCalc(btn6.innerText);
-togglePopup();
-});
-const btn7=document.getElementById("btn7");
-btn7.addEventListener("click",function(e){   
-myCalc(btn7.innerText);
-togglePopup();
-});
-const btn8=document.getElementById("btn8");
-btn8.addEventListener("click",function(e){   
-myCalc(btn8.innerText);
-togglePopup();
-});
-const btn9=document.getElementById("btn9");
-btn9.addEventListener("click",function(e){   
-myCalc(btn9.innerText);
-togglePopup();
-});
-const btn10=document.getElementById("btn10");
-btn10.addEventListener("click",function(e){   
-myCalc(btn10.innerText);
-togglePopup();
-});
-const btn11=document.getElementById("btn11");
-btn11.addEventListener("click",function(e){   
-myCalc(btn11.innerText);
-togglePopup();
-});
-const btn12=document.getElementById("btn12");
-btn12.addEventListener("click",function(e){   
-myCalc(btn12.innerText);
-togglePopup();
-});
-const btn13=document.getElementById("btn13");
-btn13.addEventListener("click",function(e){   
-myCalc(btn13.innerText);
-togglePopup();
-});
-const btn14=document.getElementById("btn14");
-btn14.addEventListener("click",function(e){   
-myCalc(btn14.innerText);
-togglePopup();
-});
-const btn15=document.getElementById("btn15");
-btn15.addEventListener("click",function(e){   
-myCalc(btn15.innerText);
-togglePopup();
-});
-const btn16=document.getElementById("btn16");
-btn16.addEventListener("click",function(e){   
-myCalc(btn16.innerText);
-togglePopup();
-});
-const btn17=document.getElementById("btn17");
-btn17.addEventListener("click",function(e){   
-myCalc(btn17.innerText);
-togglePopup();
-});
-const btn18=document.getElementById("btn18");
-btn18.addEventListener("click",function(e){   
-myCalc(btn18.innerText);
-togglePopup();
-});
-const btn19=document.getElementById("btn19");
-btn19.addEventListener("click",function(e){   
-myCalc(btn19.innerText);
-togglePopup();
-});
-const btn20=document.getElementById("btn20");
-btn20.addEventListener("click",function(e){   
-myCalc(btn20.innerText);
-togglePopup();
-});
-const btn21=document.getElementById("btn21");
-btn21.addEventListener("click",function(e){   
-myCalc(btn21.innerText);
-togglePopup();
-});
-const btn22=document.getElementById("btn22");
-btn22.addEventListener("click",function(e){   
-myCalc(btn22.innerText);
-togglePopup();
-});
-const btn23=document.getElementById("btn23");
-btn23.addEventListener("click",function(e){   
-myCalc(btn23.innerText);
-togglePopup();
-});
-const btn24=document.getElementById("btn24");
-btn24.addEventListener("click",function(e){   
-myCalc(btn24.innerText);
-togglePopup();
-});
-const btn25=document.getElementById("btn25");
-btn25.addEventListener("click",function(e){   
-myCalc(btn25.innerText);
-togglePopup();
-});
 
-const btn26=document.getElementById("btn26");
-btn26.addEventListener("click",function(e){   
-myCalc(btn26.innerText);
-togglePopup();
-});
-const btn27=document.getElementById("btn27");
-btn27.addEventListener("click",function(e){   
-myCalc(btn27.innerText);
-togglePopup();
-});
-const btn28=document.getElementById("btn28");
-btn28.addEventListener("click",function(e){   
-myCalc(btn28.innerText);
-togglePopup();
-});
-const btn29=document.getElementById("btn29");
-btn29.addEventListener("click",function(e){   
-myCalc(btn29.innerText);
-togglePopup();
-});
-const btn30=document.getElementById("btn30");
-btn30.addEventListener("click",function(e){   
-myCalc(btn30.innerText);
-togglePopup();
-});
-const btn31=document.getElementById("btn31");
-btn31.addEventListener("click",function(e){   
-myCalc(btn31.innerText);
-togglePopup();
-});
-const btn32=document.getElementById("btn32");
-btn32.addEventListener("click",function(e){   
-myCalc(btn32.innerText);
-togglePopup();
-});
