@@ -40,7 +40,7 @@ body{
 grid-template-areas: 
 "main main main main" 
 "content1 content1 content1 content1"
-"content2 content2 content3 content3" 
+"content2 content2 content7 content3" 
 "content4 content4 content5 content5"
 "footer footer footer footer"
 }
@@ -102,7 +102,15 @@ padding:1%;
   color:blue;
   padding:1%;
 }
-
+#content7{
+  grid-area:content7;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family:'Segoe UI';
+  color:blue;
+  padding:1%;
+}
 footer{
     grid-area:footer;
     background-color: white;
@@ -159,7 +167,7 @@ background-color: skyblue;
   "main main"
   "content1 content1"
   "content2 content2"
-  "content3 content3"
+  "content7 content3"
   "content4 content4"
   "content5 content5"
   "content6 content6"
