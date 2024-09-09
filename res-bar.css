@@ -9,7 +9,7 @@ body{
   width:100%;
   position:fixed;
   top:0;
-  
+  left:0;
 }
 .resbar a{
   float: left;
@@ -30,34 +30,36 @@ h1{
   color: black;
   text-align:center;
 }
-.my-butn{
+.butn{
   background-color:blue;
   color:white;
   border: solid 5px skyblue;
   border-radius: 15px;
-  width:22%;
+  width:15%;
   height: 50px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   margin-top:2px;
 }
-.my-butn:hover{
+.butn:hover{
   background-color:black;
 }
 .my-grid{
-  background-color: skyblue;
+  background-color:skyblue;
   width:95%;
   margin-left:auto;
 
 }
-@media only screen and (min-width: 300px) and (max-width: 600px){
-  .my-butn{
-     width: 48%;
-     font-size:20px;
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .butn{
+     width: 22%;
+     font-size:12px;
+
+
     }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1000px){
+@media only screen and (min-width: 600px) and (max-width: 1000px){
     .btn{
      width: 33%;
     }

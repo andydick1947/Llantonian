@@ -9,6 +9,7 @@ body{
   width:100%;
   position:fixed;
   top:0;
+  left:0;
   
 }
 .indexbar a{
@@ -31,80 +32,78 @@ body{
 .container{
   display:grid;
   height:100vh;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: .2fr 1fr 1fr 1fr 1fr .2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .8fr 1fr 1fr 1fr .2fr;
   grid-gap: .5em;
+ 
+
 grid-template-areas: 
 "main main main main" 
-"content1 content2 content2 content3"
-"content4 content5 content5 content6"
-"content7 content7 content8 content8"
+"content1 content1 content1 content1"
+"content2 content2 content3 content3" 
+"content4 content4 content5 content5"
 "footer footer footer footer"
 }
 main{
 grid-area: main;
 background-color: skyblue;
-color: black;
+color: navy;
 font-size: 40px;
 font-weight:bold;
 text-align:center;
 margin: auto;
-}
 
+}
 
 #content1{
 grid-area:content1;
-background-color: skyblue;
+background-color: white;
+border-radius: 10px;
+font-size: 20px;
+font-family:'Segoe UI';
+color:blue;
+padding:1%;
 }
 #content2{
   grid-area:content2;
-  background-color: skyblue;
-  padding: 1%;
-  color:blue;
-  font-size: 25px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
   font-family:'Segoe UI';
+  color:blue;
+  padding:1%;
 }
 #content3{
-  background-color:skyblue;
   grid-area:content3;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family:'Segoe UI';
+  color:blue;
+  padding:1%;
 }
 #content4{
-  background-color: skyblue;
+
   grid-area:content4;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family:'Segoe UI';
+  color:blue;
+  padding:1%;
 }
 #content5{
-  background-color: skyblue;
-  grid-area:content5;
-  padding: 1%;
-  color:blue;
-  font-size: 25px;
-  font-family:'Segoe UI';
-  }
-  #content6{
-    background-color: skyblue;
-    grid-area:content6;
-  }
-  #content7{
-    background-color: skyblue;
-    grid-area:content7;
-    margin: auto;
-  }
-  #content8{
-    background-color:skyblue;
-    grid-area:content8;
-    padding: 5%;
-    color:blue;
-    font-size: 25px;
-    font-family:'Segoe UI';
-  }
-  .img1{
-    height:210px;
-  }
-  .img2{
-    height: 210px;
-  }
 
-  footer{
+  grid-area:content5;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family:'Segoe UI';
+  color:blue;
+  padding:1%;
+}
+
+footer{
     grid-area:footer;
     background-color: white;
     }
@@ -130,7 +129,6 @@ footer{
   }
 }
 
-
 @media only screen and (max-width: 1200px) and (min-width: 820px){
   body {
     background-color: skyblue;
@@ -155,18 +153,18 @@ background-color: skyblue;
   }
 
 .container {
-   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
   grid-template-areas:
   "main main"
-
-  "content1 content3"
+  "content1 content1"
   "content2 content2"
-  "content4 content6"
+  "content3 content3"
+  "content4 content4"
   "content5 content5"
-  "content7 content7"
-  "content8 content8"
+  "content6 content6"
   "footer footer";
+
   grid-gap: .1em;
 }
 main{
@@ -174,22 +172,7 @@ main{
   font-size: 30px;
   font-weight:bold;
 }
-#content1{
-  margin-left: 20%;
-}
-#content3{
-  margin-left: 10%;
-}
-#content4{
-  margin-left: 20%;
-}
-#content6{
-  margin-left: 10%;
-}
-#content7{
-  padding-right: 5%;
 }
 footer{
-  background-color: yellow;
-}
+  background-color: white;
 }
