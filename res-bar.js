@@ -15,7 +15,8 @@ let myResults = [
 ["5 AUG 24","Ranks 8 5 24.htm"],
 ["12 AUG 24","Ranks 8 12 24.htm"],
 ["19 AUG 24","Ranks 8 19 24.htm"],
-["2 SEP 24","Ranks 9 2 24.htm"]
+["2 SEP 24","Ranks 9 2 24.htm"],
+["9 SEP 24","Ranks 9 9 24.htm"]
 
 ]
 
