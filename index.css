@@ -32,7 +32,7 @@ body{
 .container{
   display:grid;
   height:100vh;
-  grid-template-columns: 1fr 1fr .8fr 1.2fr;
+  grid-template-columns: .8fr .8fr 1fr 1.2fr;
   grid-template-rows: .8fr 1fr 1fr 1fr .2fr;
   grid-gap: .5em;
  
@@ -68,7 +68,7 @@ padding:1%;
   grid-area:content2;
   background-color: white;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 28px;
   font-family:'Segoe UI';
   color:blue;
   padding:1%;
@@ -104,7 +104,7 @@ padding:1%;
   grid-area:content7;
   background-color: white;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 28px;
   font-family:'Segoe UI';
   color:blue;
   padding:1%;
@@ -118,8 +118,7 @@ footer{
   width: 98%;
 }
 
-
-@media only screen and (min-width: 1200px) and (max-width: 1550px){
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
   body {
     background-color: skyblue;
   }
@@ -158,14 +157,14 @@ footer{
   }
 }
 
-@media only screen and (min-width: 950px) and (max-width: 1200px){
+@media only screen and (min-width: 1000px) and  (max-width:1200px){
   body {
     background-color: skyblue;
   }
     .container{
     display:grid;
     height:100vh;
-    grid-template-columns: .6fr 1fr 1.2fr 1.2fr;
+    grid-template-columns: .4fr 1fr 1.2fr 1.6fr;
     grid-template-rows: .8fr 1fr 1fr 1fr .2fr;
     grid-gap: .5em;
    
@@ -198,7 +197,7 @@ footer{
   }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 950px){
+@media only screen and (min-width: 10px) and (max-width: 1000px){
 body {  
 background-color: skyblue;
   }
@@ -207,14 +206,15 @@ background-color: skyblue;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ifr 0.2fr;
   grid-template-areas:
-  "main main"
-  "content1 content1" 
-  "content2 content2"
-  "content7 content7"
-  "content3 content3"
-  "content4 content4"
-  "content5 content5"
-  "footer footer";
+
+  "main"
+  "content1" 
+  "content2"
+  "content7"
+  "content3"
+  "content4"
+  "content5"
+  "footer";
   grid-gap: .1em;
 }
 
@@ -238,5 +238,4 @@ background-color: skyblue;
 
 footer{
   background-color: red;
-}
-}
+}}
