@@ -15,7 +15,7 @@ body{
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -54,13 +54,26 @@ h1{
   .butn{
      width: 22%;
      font-size:12px;
-
-
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
-    .btn{
-     width: 33%;
+    .butn{
+     width: 25%;
     }
+    @media only screen and (min-width: 50px) and (max-width: 590px){
+      .butn{
+        width: 30%;
+        font-size: 12px;
+       }
+
+      .resbar a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1px 1px;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      }
 }
