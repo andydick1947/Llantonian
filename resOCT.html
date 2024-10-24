@@ -28,26 +28,27 @@
 
 <script src="res-bar.js"></script>
 <script>
-  for (let x=41; x<=44; x++){ 
-    ii=x-1;
-if (myResults[ii][2]=="1"){
-bt="butn".concat(x);
-document.getElementById(bt).style.backgroundColor="skyblue";
-document.getElementById(bt).style.borderColor="blue";
-} 
- let z="butn".concat(x);
- let y=document.getElementById(z);
- 
- y.addEventListener("click",function(e){  
- 
- fileCalc(y.innerText);
- 
- ldfle();
- })
- };
-   
- function fileCalc(lbl){
- for (let i=40; i<=43; i++){  
+
+  for (let x=runtot[9]; x<=(runtot[10]-1); x++){ 
+       ii=x-1;
+ if (myResults[ii][2]=="1"){
+ bt="butn".concat(x);
+ document.getElementById(bt).style.backgroundColor="skyblue";
+ document.getElementById(bt).style.borderColor="blue";
+ }
+    let z="butn".concat(x);
+    let y=document.getElementById(z);
+    
+    y.addEventListener("click",function(e){  
+    
+    fileCalc(y.innerText);
+    
+    ldfle();
+    })
+    };
+      
+    function fileCalc(lbl){
+   for (let i=(runtot[9]-1); i<=(runtot[10]-2); i++){ 
  
  if (lbl==myResults[i][0]){
  myRes=myResults[i];}

@@ -1,5 +1,5 @@
 let myRes = ["0","0"]
-
+let runtot=[0,0,0,0,0,0,0,0,0,0,0,0]
 const myResults =[
 ["0","0","1"],    /* JAN */   
 ["0","0","1"],    /*  */    
@@ -55,7 +55,7 @@ const myResults =[
 ["0","0","1"],    /*  */
 ["0","0","1"]     /*  */
 ]
-    
+
 
     for (let zz=0; zz<=52; zz++){
         const mnth= ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
@@ -80,9 +80,14 @@ const myResults =[
     myResults[zz][0]=shortDate;
     myResults[zz][1]=fileRef;
     /*myResults[zz][2]=1;*/
-
     
     }
 
-
+    let wpm=[5,4,4,5,4,4,5,4,5,4,4,5]
+    for (let xx=1;xx<=12;xx++){
+      runtot[0]=1;
+     runtot[xx]=runtot[xx-1]+wpm[xx-1];
+    }
+    console.log(wpm);
+    console.log(runtot);
     
