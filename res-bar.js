@@ -88,6 +88,5 @@ const myResults =[
       runtot[0]=1;
      runtot[xx]=runtot[xx-1]+wpm[xx-1];
     }
-    console.log(wpm);
-    console.log(runtot);
+
     
