@@ -45,10 +45,14 @@ h1{
   background-color:black;
 }
 .my-grid{
+  display: flex;
+  align-self: auto;
+  justify-content:center;
+  align-items: center;
   background-color:skyblue;
-  width:95%;
-  margin-left:auto;
-
+  margin-top: 50px;
+ 
+  flex-wrap:wrap;
 }
 @media only screen and (min-width: 100px) and (max-width: 700px){
   .butn{
