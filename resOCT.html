@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>llantonian Bridge</title>
+  <title>Bowls Club Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -10,17 +10,11 @@
 <body>
   <div class="resbyMnth">
     <a href="index.html">Home</a>
-
     <a href="res-mnths.html">Results</a>
   </div>
 
-
-  <div class="my-grid">
-    <br><br><br>
-  <button type="button" id="butn41" class="butn">7 OCT 24</button>
-  <button type="button" id="butn42" class="butn">14 OCT 24</button>
-  <button type="button" id="butn43" class="butn">21 OCT 24</button>
-  <button type="button" id="butn44" class="butn">28 OCT 24</button>
+  <br><br><br>
+  <div id="div-container1">
  
   </div>
   
@@ -28,27 +22,42 @@
 
 <script src="res-bar.js"></script>
 <script>
+if(stdt==4){
+btsv=runtot[6];
+btev=runtot[7];
+} else if (stdt==1){
+  btsv=runtot[9];
+  btev=runtot[10]; 
+}
+for (let ii=btsv; ii<=btev-1;ii++){
+const dsel=`<button type="button" id="butn${ii}" class="butn">${myResults[ii-1][0]}</button>`;
+const div=document.createElement("div");
+const DivContainer1=document.getElementById("div-container1");
+DivContainer1.appendChild(div);
+div.innerHTML=dsel;
+  }
 
-  for (let x=runtot[9]; x<=(runtot[10]-1); x++){ 
-       ii=x-1;
- if (myResults[ii][2]=="1"){
- bt="butn".concat(x);
- document.getElementById(bt).style.backgroundColor="skyblue";
- document.getElementById(bt).style.borderColor="blue";
- }
-    let z="butn".concat(x);
-    let y=document.getElementById(z);
-    
-    y.addEventListener("click",function(e){  
-    
-    fileCalc(y.innerText);
-    
-    ldfle();
-    })
-    };
-      
-    function fileCalc(lbl){
-   for (let i=(runtot[9]-1); i<=(runtot[10]-2); i++){ 
+  for (let x=btsv; x<=btev-1; x++){ 
+    ii=x-1;
+if (myResults[ii][2]=="1"){
+bt=`butn${x}`;
+
+document.getElementById(bt).style.backgroundColor="skyblue";
+document.getElementById(bt).style.borderColor="blue";
+}
+ let z="butn".concat(x);
+ let y=document.getElementById(z);
+ 
+ y.addEventListener("click",function(e){  
+ 
+ fileCalc(y.innerText);
+ 
+ ldfle();
+ })
+ };
+   
+ function fileCalc(lbl){
+  for (let i=btsv-1; i<=btev-2; i++){ 
  
  if (lbl==myResults[i][0]){
  myRes=myResults[i];}

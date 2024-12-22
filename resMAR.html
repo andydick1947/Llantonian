@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>llantonian Bridge</title>
+  <title>Bowls Club Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -14,26 +14,37 @@
     <a href="res-mnths.html">Results</a>
 
   </div>
- 
-  <div class= "my-grid">
-    <br><br><br>
-    <button type="button" id="butn10" class="butn">4 MAR 24</button>
-    <button type="button" id="butn11" class="butn">11 MAR 24</button>
-    <button type="button" id="butn12" class="butn">18 MAR 24</button>
-    <button type="button" id="butn13" class="butn">25 MAR 24</button>
-  
+  <br><br><br>
+  <div id= "div-container1">
+
   </div>
-  <div class="target3"></div>
+  <div class="target4"></div>
 
     <script src="res-bar.js"></script>
     <script>
-for (let x=runtot[2]; x<=(runtot[3]-1); x++){ 
-        ii=x-1;
+if(stdt==4){
+btsv=runtot[11];
+btev=runtot[12];
+} else if (stdt==1){
+  btsv=runtot[2];
+  btev=runtot[3]; 
+}
+for (let ii=btsv; ii<=btev-1;ii++){
+const dsel=`<button type="button" id="butn${ii}" class="butn">${myResults[ii-1][0]}</button>`;
+const div=document.createElement("div");
+const DivContainer1=document.getElementById("div-container1");
+DivContainer1.appendChild(div);
+div.innerHTML=dsel;
+  }
+
+  for (let x=btsv; x<=btev-1; x++){ 
+    ii=x-1;
 if (myResults[ii][2]=="1"){
-bt="butn".concat(x);
+bt=`butn${x}`;
+
 document.getElementById(bt).style.backgroundColor="skyblue";
 document.getElementById(bt).style.borderColor="blue";
-} 
+}
      let z="butn".concat(x);
      let y=document.getElementById(z);
      
@@ -46,21 +57,21 @@ document.getElementById(bt).style.borderColor="blue";
      };
        
      function fileCalc(lbl){
-      for (let i=(runtot[2]-1); i<=(runtot[3]-2); i++){  
+      for (let i=btsv-1; i<=btev-2; i++){ 
      
      if (lbl==myResults[i][0]){
      myRes=myResults[i];}
      sk=myRes[0,1]; 
      }
-
+     
      if(myRes[0,2]=="1"){
        sk="Ranks.html";
      }
-
+     
      return sk; 
      }
        function ldfle(){
-       const target3El=document.querySelector(".target3");
+       const target4El=document.querySelector(".target4");
       
        fetch(sk)
        
@@ -70,7 +81,7 @@ document.getElementById(bt).style.borderColor="blue";
                }
        })
        .then(selectFile =>{
-       target3El.innerHTML=selectFile;
+       target4El.innerHTML=selectFile;
        });
        }
        

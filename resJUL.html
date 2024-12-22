@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>llantonian Bridge</title>
+  <title>Bowls Club Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -14,24 +14,36 @@
     <a href="res-mnths.html">Results</a>
 
   </div>
- 
-  <div class= "my-grid">
-    <br><br><br>
-    <button type="button" id="butn27" class="butn">1 JUL 24</button>
-    <button type="button" id="butn28" class="butn">8 JUL 24</button>
-    <button type="button" id="butn29" class="butn">15 JUL 24</button>
-    <button type="button" id="butn30" class="butn">22 JUL 24</button>
-    <button type="button" id="butn31" class="butn">29 JUL 24</button>
-      </div>
+  <br><br><br>
+  <div id="div-container1">
+
+
+  </div>
   
   <div class="target7"></div>
 
   <script src="res-bar.js"></script>
   <script>
-     for (let x=runtot[6]; x<=(runtot[7]-1); x++){ 
-      ii=x-1;
+ if(stdt==4){
+btsv=runtot[3];
+btev=runtot[4];
+} else if (stdt==1){
+  btsv=runtot[6];
+  btev=runtot[7]; 
+}
+for (let ii=btsv; ii<=btev-1;ii++){
+const dsel=`<button type="button" id="butn${ii}" class="butn">${myResults[ii-1][0]}</button>`;
+const div=document.createElement("div");
+const DivContainer1=document.getElementById("div-container1");
+DivContainer1.appendChild(div);
+div.innerHTML=dsel;
+  }
+
+  for (let x=btsv; x<=btev-1; x++){ 
+    ii=x-1;
 if (myResults[ii][2]=="1"){
-bt="butn".concat(x);
+bt=`butn${x}`;
+
 document.getElementById(bt).style.backgroundColor="skyblue";
 document.getElementById(bt).style.borderColor="blue";
 }
@@ -47,7 +59,7 @@ document.getElementById(bt).style.borderColor="blue";
    };
      
    function fileCalc(lbl){
-    for (let i=(runtot[6]-1); i<=(runtot[7]-2); i++){  
+    for (let i=btsv-1; i<=btev-2; i++){ 
    
    if (lbl==myResults[i][0]){
    myRes=myResults[i];}
