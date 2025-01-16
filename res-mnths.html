@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bridge</title>
+  <title>Penllyn Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-bar.css">
@@ -13,45 +13,27 @@
     <a class="active" href="res-mnths.html">Results</a>
     <a href="readMeResults.html">ReadMe</a>
   </div>
-<br><br>
-  <div id="div-container">
- 
+<br>
+
+
+  <div class="my-grid1">
+  <button class="butn" onclick="document.location='resJAN.html'">JAN</button>
+  <button class="butn" onclick="document.location='resFEB.html'">FEB</button>
+  <button class="butn" onclick="document.location='resMAR.html'">MAR</button>    
+  <button class="butn" onclick="document.location='resAPR.html'">APR</button>
+  <button class="butn" onclick="document.location='resMAY.html'">MAY</button>
+  <button class="butn" onclick="document.location='resJUN.html'">JUN</button> 
+  <button class="butn" onclick="document.location='resJUL.html'">JUL</button>
+  <button class="butn" onclick="document.location='resAUG.html'">AUG</button>
+  <button class="butn" onclick="document.location='resSEP.html'">SEP</button>
+  <button class="butn" onclick="document.location='resOCT.html'">OCT</button>
+  <button class="butn" onclick="document.location='resNOV.html'">NOV</button>
+  <button class="butn" onclick="document.location='resDEC.html'">DEC</button>  
+</div>
+<div id="container6">
 
   </div>
 
-
-<script src="res-bar.js"></script>
-<script>
-
-if (stdt==4){
-  for (let ii=3; ii<=11;ii++){
-    const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
-const div=document.createElement("div");
-const DivContainer=document.getElementById("div-container");
-DivContainer.appendChild(div);
-div.innerHTML=msel;
-}
-
-for (let ii=0; ii<=2;ii++){
-  const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
-const div=document.createElement("div");
-const DivContainer=document.getElementById("div-container");
-DivContainer.appendChild(div);
-div.innerHTML=msel;
-}
-
-}else if (stdt==1){
-
-for (let ii=0; ii<=11;ii++){
-  const msel=`<button id="buton${ii}" class="butn" onclick="document.location='res${mnth[ii]}.html'">${mnth[ii]}</button>`;
-  const div=document.createElement("div");
-const DivContainer=document.getElementById("div-container");
-DivContainer.appendChild(div);
-div.innerHTML=msel;
-}
-}
-console.log(myResults);
-</script>
 </body>
 </html>
 

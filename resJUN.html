@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bowls Club Bridge</title>
+  <title>Penllyn Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -15,36 +15,23 @@
 
   </div>
   <br><br><br>
-  <div id="div-container1">
-
-
+  <div class="my-grid">
+  <button type="button" id="butn22" class="butn">2 JUN 25</button>
+  <button type="button" id="butn23" class="butn">9 JUN 25</button>
+  <button type="button" id="butn24" class="butn">16 JUN 25</button>
+  <button type="button" id="butn25" class="butn">23 JUN 25</button>
+  <button type="button" id="butn26" class="butn">30 JUN 25</button>
+ 
   </div>
   <div class="target6"></div>
 
     <script src="res-bar.js"></script>
     <script>
-if(stdt==4){
-btsv=runtot[2];
-btev=runtot[3];
-} else if (stdt==1){
-  btsv=runtot[5];
-  btev=runtot[6]; 
-}
-for (let ii=btsv; ii<=btev-1;ii++){
-const dsel=`<button type="button" id="butn${ii}" class="butn">${myResults[ii-1][0]}</button>`;
-const div=document.createElement("div");
-const DivContainer1=document.getElementById("div-container1");
-DivContainer1.appendChild(div);
-div.innerHTML=dsel;
-  }
-
-  for (let x=btsv; x<=btev-1; x++){ 
-    ii=x-1;
+     for (let x=runtot[5]; x<=(runtot[6]-1); x++){ 
+        ii=x-1;
 if (myResults[ii][2]=="1"){
-bt=`butn${x}`;
-
+bt="butn".concat(x);
 document.getElementById(bt).style.backgroundColor="skyblue";
-document.getElementById(bt).style.borderColor="blue";
 }
      let z="butn".concat(x);
      let y=document.getElementById(z);
@@ -58,7 +45,7 @@ document.getElementById(bt).style.borderColor="blue";
      };
        
      function fileCalc(lbl){
-      for (let i=btsv-1; i<=btev-2; i++){ 
+      for (let i=(runtot[5]-1); i<=(runtot[6]-2); i++){  
      
      if (lbl==myResults[i][0]){
      myRes=myResults[i];}
@@ -73,6 +60,7 @@ document.getElementById(bt).style.borderColor="blue";
      }
        function ldfle(){
        const target6El=document.querySelector(".target6");
+       document.getElementById(bt).style.borderColor="blue";
       
        fetch(sk)
        
