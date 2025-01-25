@@ -68,7 +68,7 @@ h1{
   }
 #vid1{
   width:75%;
-}/**/
+}
 
 @media only screen and (min-width: 600px) and (max-width: 1000px){
     .butn{
@@ -76,9 +76,11 @@ h1{
     }
     .my-grid1{
       margin-top:10%;
-     }#vid1{
+     }
+    #vid1{
       width:90%;
     }
+  }
     @media only screen and (min-width: 50px) and (max-width: 590px){
       .butn{
         width: 30%;
