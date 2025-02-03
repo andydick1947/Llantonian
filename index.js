@@ -64,7 +64,7 @@ function tgle(){
 }
 
 function myintro(){
-      const int='<p class="mytxt"><br>The Bridge Club was founded around 1996 as the Monday Night Bridge Club, the first Director being Derek Branch. The Club continues to meet in the Llantonian Hall.  The aim of the club is to provide a regular facility for Duplicate Bridge allowing all pairs to play the same boards over the course of the evening. Ideally people attend in pairs although every attempt is made to cater for those without a regular partner.</p>';
+      const int='<p class="mytxt"><br>The Bridge Club was founded around 1996 as the Monday Night Bridge Club, the first Director being Derek Branch. The Club continues to meet in the Llantonian Hall. <br><br> The aim of the club is to provide a regular facility for Duplicate Bridge allowing all pairs to play the same boards over the course of the evening. Ideally people attend in pairs although every attempt is made to cater for those without a regular partner.<br> <br>Scoring at club nights has been enhanced with the introduction of a digital system. This uses easy to read digital touch screens enabling straightforward input of results for games played. After completion of each round the screen informs  players of the movement for the next round. Final results are available on screen at the end of the whole session.</p>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
