@@ -79,7 +79,7 @@ function myloc1(){
    div1.innerHTML=loc1;
 }
 function myloc(){
-   const loc='<p class="mytxt"><br>The Llantonian Hall is situated at the far end of the Car Park it shares with the Rugby Club. Access is directly off the roundabout passed the surgery.</p>';
+   const loc='<p class="mytxt"><br>The Llantonian Hall is situated at the far end of the Car Park it shares with the Rugby Club. Access is directly off the roundabout behind the surgery.</p>';
    const div=document.createElement("div");
    const mydiv=document.getElementById("mainsect");
    mydiv.appendChild(div);
@@ -122,7 +122,7 @@ function mymeets1(){
 }
 
 function mymeets(){
-   const mts='<p id="meets" class="mytxt">The club meets on Monday evenings at 6.45, with play starting at 7.00 and aiming to finish by 10.00. There are also two party evenings each year</p>';
+   const mts='<p id="meets" class="mytxt">The club meets on Monday evenings at 6.45, with play starting at 7.00 and aiming to finish by 10.00. There are also two party evenings each year.<br><br>Play is conducted in a relaxed and friendly manner aiming to ensure an enjoyable evening for all participants. Advice / discussion is forthcoming to those requesting such, when time permits. This is usually at the end of that round or indeed the end of the evening.<br><br>Given sufficient notice our Secretary  will help individuals to find a partner for a particular evening. </p>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);
@@ -131,7 +131,7 @@ function mymeets(){
 
 function myfees1(){
    const fees1='<p style="color: black;font-weight:bold;font-size:30px;">FEES<br></p>';
-      const div1=document.createElement("div");
+      const div1=document.createElement("div");assist
       const mydiv1=document.getElementById("mainsect");
       mydiv1.appendChild(div1);
       div1.innerHTML=fees1;
