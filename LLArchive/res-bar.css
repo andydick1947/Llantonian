@@ -1,0 +1,120 @@
+body{
+  box-sizing: border-box;
+  background-color:skyblue;
+}
+
+.resbar{
+  background: black;
+  overflow: hidden;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+}
+.resbar a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.resbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.resbar a.active {
+  background-color: #04AA6D;
+}
+h1{
+  color: black;
+  text-align:center;
+}
+.butn{
+  background-color:blue;
+  color:white;
+  border: solid 5px skyblue;
+  border-radius: 15px;
+  width:15%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top:2px;
+}
+.butn:hover{
+  background-color:black;
+}
+.my-grid1{
+  display: flex;
+  align-self: auto;
+  justify-content:center;
+  align-items: center;
+  width: 90%;
+  margin-left:4%;
+  margin-right:6%;
+  margin-top:2%;
+  background-color: skyblue;
+  flex-wrap: wrap;
+
+}
+#container6{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width:60%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color:skyblue;
+  }
+#vid1{
+  width:75%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .butn{
+     width: 15%;
+    }
+    .my-grid1{
+      margin-top:2%;
+     }
+     #vid1{
+      width:70%;
+    }
+    #container6{
+
+      width:90%;
+      margin-left: 10%;
+      margin-right: 10%;
+ 
+      }
+    }
+    @media only screen and (min-width: 50px) and (max-width: 599px){
+      .butn{
+        width: 25%;
+        font-size: 20px;
+       }
+       .my-grid1{
+        margin-top:4%;
+       }
+       #vid1{
+        width:100%;
+      }
+      .resbar a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1px 1px;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      }
+      #container6{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width:100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color:skyblue;
+        }
+

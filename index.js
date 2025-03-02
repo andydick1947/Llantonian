@@ -154,7 +154,7 @@ function myres(){
 }
 
 function myarch(){
-      const arc='<iframe id="frm1" src="https://andydick1947.github.io/LLArchive/"></iframe>';
+      const arc='<iframe id="frm1" src="/LLArchive/index.html"></iframe>';
       const div=document.createElement("div");
       const mydiv=document.getElementById("mainsect");
       mydiv.appendChild(div);

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>llantonian Bridge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="res-byMnth.css">
+ 
+</head>
+<body>
+
+  <div class="my-grid">
+    <br><br><br>
+  <button type="button" id="butn41" class="butn">7 OCT 24</button>
+  <button type="button" id="butn42" class="butn">14 OCT 24</button>
+  <button type="button" id="butn43" class="butn">21 OCT 24</button>
+  <button type="button" id="butn44" class="butn">28 OCT 24</button>
+ 
+  </div>
+  
+  <div class="target10"></div>
+
+<script src="res-bar.js"></script>
+<script>
+
+  for (let x=runtot[9]; x<=(runtot[10]-1); x++){ 
+       ii=x-1;
+ if (myResults[ii][2]=="1"){
+ bt="butn".concat(x);
+ document.getElementById(bt).style.backgroundColor="skyblue";
+ document.getElementById(bt).style.borderColor="blue";
+ }
+    let z="butn".concat(x);
+    let y=document.getElementById(z);
+    
+    y.addEventListener("click",function(e){  
+    
+    fileCalc(y.innerText);
+    
+    ldfle();
+    })
+    };
+      
+    function fileCalc(lbl){
+   for (let i=(runtot[9]-1); i<=(runtot[10]-2); i++){ 
+ 
+ if (lbl==myResults[i][0]){
+ myRes=myResults[i];}
+ sk=myRes[0,1]; 
+ }
+ 
+ if(myRes[0,2]=="1"){
+   sk="Ranks.html";
+ }
+ 
+ return sk; 
+ }
+   function ldfle(){
+   const target10El=document.querySelector(".target10");
+  
+   fetch(sk)
+   
+       .then(res => {
+           if (res.ok) {
+           return res.text();
+           }
+   })
+   .then(selectFile =>{
+   target10El.innerHTML=selectFile;
+   });
+   }
+   
+   
+   </script>
+</body>
+</html>
+
