@@ -131,7 +131,7 @@ function mymeets(){
 
 function myfees1(){
    const fees1='<p style="color: black;font-weight:bold;font-size:30px;">FEES<br></p>';
-      const div1=document.createElement("div");assist
+      const div1=document.createElement("div");
       const mydiv1=document.getElementById("mainsect");
       mydiv1.appendChild(div1);
       div1.innerHTML=fees1;
