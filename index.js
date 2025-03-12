@@ -1,4 +1,4 @@
-for (let x=1; x<=7; x++){ 
+for (let x=1; x<=8; x++){ 
   
   let z=`sidebtn${x}`;
   let y=document.getElementById(z);
@@ -37,6 +37,12 @@ for (let x=1; x<=7; x++){
    if(z=="sidebtn7"){ 
       clean()
       myarch()
+   }
+   
+   if(z=="sidebtn8"){ 
+      clean()
+      myscore1()
+      myscore()
    }
   })
   };
@@ -160,6 +166,50 @@ function myarch(){
       mydiv.appendChild(div);
       div.innerHTML=arc;
 }
+function myscore1(){
+   const score7='<p style="color: black;font-weight:bold;font-size:30px;">SCORING<br></p>';
+      const div1=document.createElement("div");
+      const mydiv1=document.getElementById("mainsect");
+      mydiv1.appendChild(div1);
+      div1.innerHTML=score7;
+}
+function myscore(){
+   const score1='<p class="mytxt">The scoring for each session is accomplished electronically using the “BridgePal” system.<br><br>  Scores are entered at each table via Android Tablets with a 7.5 inch screen. The large display with the high contrast screen make data entry very easy. Examples of these screens are illustrated below.</p>';
+   const div=document.createElement("div");
+   const mydiv=document.getElementById("mainsect");
+   mydiv.appendChild(div);
+   div.innerHTML=score1;
+
+   const score2='<img id="img3" src="images/Picture2.png"></img><br>';
+   const div5=document.createElement("div");
+   const mydiv5=document.getElementById("mainsect");
+   mydiv5.appendChild(div5);
+   div5.innerHTML=score2;
+
+   const score3='<p class="mytxt">Provisional scores are available immediately on completion of the session and these are ratified the following morning when they are placed on the club website. In addition to Rankings and Scorecard for each pair the hands played are combined with the Travellers to enble players to analyse their performance.  An example of the of these is illustrated below. <br></p>';
+   const div4=document.createElement("div");
+   const mydiv4=document.getElementById("mainsect");
+   mydiv4.appendChild(div4);
+   div4.innerHTML=score3;
+
+const score4='<img id="img3" src="images/Ranks.png"></img><br>';
+const div1=document.createElement("div");
+const mydiv1=document.getElementById("mainsect");
+mydiv1.appendChild(div1);
+div1.innerHTML=score4;
+
+const score5='<img id="img3" src="images/Scorecard.png"></img><br>';
+const div2=document.createElement("div");
+const mydiv2=document.getElementById("mainsect");
+mydiv2.appendChild(div2);
+div2.innerHTML=score5;
+
+const score6='<img id="img3" src="images/Traveller.png"></img><br>';
+const div3=document.createElement("div");
+const mydiv3=document.getElementById("mainsect");
+mydiv3.appendChild(div3);
+div3.innerHTML=score6;
+}
 
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
@@ -168,7 +218,7 @@ hamMenu.addEventListener("click", () => {
   offScreenMenu.classList.toggle("active");
 });
 
-for (let x=1; x<=7; x++){ 
+for (let x=1; x<=8; x++){ 
   
    let z=`debtn${x}`;
    let y=document.getElementById(z);
@@ -221,5 +271,12 @@ for (let x=1; x<=7; x++){
        myarch()
        tgle()
     }
+    
+    if(z=="debtn8"){ 
+      clean()
+      myscore1()
+      myscore()
+      tgle()
+   }
    })
    }
