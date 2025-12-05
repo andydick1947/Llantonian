@@ -8,9 +8,6 @@ nav{
   display:none;
 }
 
-
-
-
 body{
 background-color: skyblue; 
 height: 90vh;
@@ -40,7 +37,7 @@ grid-template-areas:
 .sidebtn{
   display: block;
   background-color: black;
-  height: 60px;
+  height: 50px;
   width: 100%;
   border: solid 1px white;
   text-align: center;
@@ -91,6 +88,7 @@ grid-template-areas:
   padding: 40px;
   padding-top:10%;
   padding-bottom:5%;
+  height: 100px
 }
 
 #tbl{
@@ -135,7 +133,12 @@ color: blue;
 
 .popup .p2{
   font-size: 20px;
-  
+  }
+
+  .myvideo{
+  display: block;
+  margin: auto;
+  width: 90%;
 
 }
 
@@ -315,6 +318,13 @@ nav {
       margin-right:0%;
       font-size: 20px;
   }
+  
+  .myvideo{
+  display: block;
+  margin: auto;
+  width: 99%;
+
+}
 }
 @media only screen and (min-width: 200px) and (max-width: 300px){
   #small{
@@ -329,49 +339,6 @@ nav {
   padding-left: 1%;
   padding-right: 1%;
 }
-
-
-}
-
-@media only screen and (min-width: 300px) and (max-width: 500px){
-.popup{
-  background-color: #ffffff;
-  width: 280px;
-  padding: 30px 40px;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left:50%;
-  top: 50%;
-  border-radius: 8px;
-  display: none;
-}
-
-.popup button{
-  display: block;
-  margin: 0 0 0 auto;
-  background-color: red;
-  font-size: 30px;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  outline: none;
-  cursor: pointer;
-}
-
-.popup .p1{
-  font-size: 30px;
-  
-  margin: 0 0;
-}
-
-.popup .p2{
-  font-size: 20px;
-  
-
-}
-}
-
-@media only screen and (min-width: 200px) and (max-width: 300px){
 .popup{
   background-color: #ffffff;
   width: 200px;
@@ -408,6 +375,68 @@ nav {
 
 }
 }
+  .myvideo{
+  display: block;
+  margin: auto;
+  width: 99%;
+
+}
+
+
+
+  .myvideo{
+  display: block;
+  margin: auto;
+  width: 99%;
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+.popup{
+  background-color: #ffffff;
+  width: 90%;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+}
+
+.popup button{
+  display: block;
+  margin: 0 0 0 auto;
+  background-color: red;
+  font-size: 30px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup .p1{
+  font-size: 30px;
+  
+  margin: 0 0;
+}
+
+.popup .p2{
+  font-size: 20px;
+  
+
+}
+  .myvideo{
+  display: block;
+  margin: auto;
+  width: 99%;
+
+}
+}
+
+
 
 @media only screen and (max-width: 200px){
   body{
