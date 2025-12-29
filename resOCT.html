@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Penllyn Bridge</title>
+  <title>Llantonian Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -12,10 +12,10 @@
 
   <br><br><br>
   <div class="my-grid">
-  <button type="button" id="butn40" class="btn">6 OCT 25</button>
-  <button type="button" id="butn41" class="btn">13 OCT 25</button>
-  <button type="button" id="butn42" class="btn">20 OCT 25</button>
-  <button type="button" id="butn43" class="btn">27 OCT 25</button>
+  <button type="button" id="butn40" class="btn">5 OCT 26</button>
+  <button type="button" id="butn41" class="btn">12 OCT 26</button>
+  <button type="button" id="butn42" class="btn">19 OCT 26</button>
+  <button type="button" id="butn43" class="btn">26 OCT 26</button>
 
   </div>
   
@@ -47,11 +47,14 @@ document.getElementById(bt).style.color="darkgray";
  
  if (lbl==myResults[i][0]){
  myRes=myResults[i];}
- sk=myRes[0,1]; 
+ sk=myRes[0,1];
+
+ sk="/resfiles/"+sk;
+
  }
  
  if(myRes[0,2]=="1"){
-   sk="Ranks.html";
+   sk="/resfiles/Ranks.html";
  }
  
  return sk; 

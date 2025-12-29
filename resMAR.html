@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Penllyn Bridge</title>
+  <title>Llantonian Bridge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="res-byMnth.css">
@@ -13,11 +13,11 @@
   <div class= "my-grid">
  
     
-    <button type="button" id="butn9" class="btn">3 MAR 25</button>
-    <button type="button" id="butn10" class="btn">10 MAR 25</button>
-    <button type="button" id="butn11" class="btn">17 MAR 25</button>
-    <button type="button" id="butn12" class="btn">24 MAR 25</button>
-    <button type="button" id="butn13" class="btn">31 MAR 25</button>
+    <button type="button" id="butn9" class="btn">2 MAR 26</button>
+    <button type="button" id="butn10" class="btn">9 MAR 26</button>
+    <button type="button" id="butn11" class="btn">16 MAR 26</button>
+    <button type="button" id="butn12" class="btn">23 MAR 26</button>
+    <button type="button" id="butn13" class="btn">30 MAR 26</button>
   </div>
   <div class="target3"></div>
 
@@ -46,17 +46,20 @@ document.getElementById(bt).style.color="darkgray";
      function fileCalc(lbl){
      for (let i=(runtot[2]-1); i<=(runtot[3]-2); i++){ 
      
-     if (lbl==myResults[i][0]){
-     myRes=myResults[i];}
-     sk=myRes[0,1]; 
-     }
-     
-     if(myRes[0,2]=="1"){
-       sk="Ranks.html";
-     }
-     
-     return sk; 
-     }
+if (lbl==myResults[i][0]){
+ myRes=myResults[i];}
+ sk=myRes[0,1];
+
+ sk="/resfiles/"+sk;
+
+ }
+ 
+ if(myRes[0,2]=="1"){
+   sk="/resfiles/Ranks.html";
+ }
+ 
+ return sk; 
+ }
        function ldfle(){
        const target3El=document.querySelector(".target3");
       
