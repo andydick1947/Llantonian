@@ -103,8 +103,8 @@ color: blue;
 
 .popup{
   background-color: #ffffff;
-  width: 450px;
-  padding: 30px 40px;
+  width: 60%;
+  padding: 40px 10px;
   position: absolute;
   transform: translate(-50%,-50%);
   left:50%;
@@ -135,7 +135,17 @@ color: blue;
   font-size: 20px;
   }
 
+.popup .p3{
+  display: inline-block;
+  font-size: 20px;
+  height: auto;
 
+  }
+
+.popup #close{
+  display: inline-block;
+  margin-left: 200px;
+}
 
 @media only screen and (min-width: 200px) and (max-width: 1000px){
   .header {
@@ -314,6 +324,17 @@ nav {
       font-size: 20px;
   }
   
+.popup .p3{
+  display: inline-block;
+  font-size: 16px;
+  height: auto;
+
+  }
+
+.popup #close{
+  display: inline-block;
+  margin-left: 60px;
+}
 
 }
 @media only screen and (min-width: 200px) and (max-width: 300px){
@@ -406,6 +427,18 @@ nav {
   font-size: 20px;
   
 
+}
+
+.popup .p3{
+  display: inline-block;
+  font-size: 14px;
+  height: auto;
+
+  }
+
+.popup #close{
+  display: inline-block;
+  margin-left: 10px;
 }
 
 }
