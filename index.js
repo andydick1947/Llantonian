@@ -155,13 +155,12 @@ function myres(){
 }
 
 function myscore1(){
-   const score7='<p style="color: black;font-weight:bold;font-size:30px;">SCORING<br></p>';
+   const score7='<p style="color: black;font-weight:bold;font-size:30px;margin-left:50px">SCORING<br></p>';
       const div1=document.createElement("div");
       const mydiv1=document.getElementById("mainsect");
       mydiv1.appendChild(div1);
       div1.innerHTML=score7;
 }
-
 function myscore(){
    const score1='<p class="mytxt">The scoring for each session is accomplished electronically using the “BridgePal” system.<br><br>  Scores are entered at each table via Android Tablets with a 7.5 inch screen. The large display with the high contrast screen make data entry very easy. Examples of these screens are illustrated below.</p>';
    const div=document.createElement("div");
@@ -268,8 +267,8 @@ for (let x=1; x<=7; x++){
       setTimeout(
          function open(event){
       document.querySelector(".popup").style.display="block";
-   })
-
+   }),
+   1000
    });
 
 
