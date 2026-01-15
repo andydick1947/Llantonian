@@ -155,7 +155,7 @@ function myres(){
 }
 
 function myscore1(){
-   const score7='<p style="color: black;font-weight:bold;font-size:30px;">SCORING<br></p>';
+   const score7='<p style="color: black;font-weight:bold;font-size:30px;margin-left: 50px;">SCORING<br></p>';
       const div1=document.createElement("div");
       const mydiv1=document.getElementById("mainsect");
       mydiv1.appendChild(div1);
