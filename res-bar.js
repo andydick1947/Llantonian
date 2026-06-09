@@ -74,8 +74,8 @@ sessions[17][1]=1;/*May*/
 sessions[18][1]=0;
 sessions[19][1]=0;
 sessions[20][1]=1;
-sessions[21][1]=0;
-sessions[22][1]=1;
+sessions[21][1]=0; /*Jun*/
+sessions[22][1]=0;
 sessions[23][1]=1;
 sessions[24][1]=1;
 sessions[25][1]=1;
@@ -109,4 +109,3 @@ sessions[51][1]=1;
 for (let i=0; i<=51;i++){
   myResults[i][2]=sessions[i][1];
 }
-
